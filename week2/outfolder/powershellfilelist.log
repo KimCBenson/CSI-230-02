@@ -1,4 +1,0 @@
-#TYPE System.String
-"PSPath","PSParentPath","PSChildName","PSDrive","PSProvider","PSIsContainer","Length"
-"Microsoft.PowerShell.Core\FileSystem::C:\Users\champuser\CSI-230-02\week2\part1networkingscripts.ps1","Microsoft.PowerShell.Core\FileSystem::C:\Users\champuser\CSI-230-02\week2","part1networkingscripts.ps1","C","Microsoft.PowerShell.Core\FileSystem","False","26"
-"Microsoft.PowerShell.Core\FileSystem::C:\Users\champuser\CSI-230-02\week2\part2directorylistingscripts.ps1","Microsoft.PowerShell.Core\FileSystem::C:\Users\champuser\CSI-230-02\week2","part2directorylistingscripts.ps1","C","Microsoft.PowerShell.Core\FileSystem","False","32"

@@ -1,4 +1,6 @@
 ﻿. (Join-Path "C:\Users\champuser\CSI-230-02\week4" "apachelogs.ps1")
+. (Join-Path "C:\Users\champuser\CSI-230-02\week6\Local User Management" "Users.ps1")
+. (Join-Path "C:\Users\champuser\CSI-230-02\week6\Local User Management" "Event-Logs.ps1")
 . (Join-Path "C:\Users\champuser\CSI-230-02\week2\process_management" "chromecheck.ps1")
 
 
@@ -22,6 +24,19 @@ while ($operation)
         $apacheLogs = ApacheLogs1 | Select-Object -Last 10
 
         $apacheLogs
+    }
+
+    elseif ($choice -eq 2)
+    {
+        getFailedLogins 10
+    }
+
+    elseif ($choice -eq 3)
+    {
+        $days = Read-Host -Prompt "Enter the number of days to list at risk users for"
+        $riskUsers = getAtRiskUsers $days
+
+        Write-Host ($riskUsers | Format-Table | Out-String)
     }
 
     elseif ($choice -eq 4)

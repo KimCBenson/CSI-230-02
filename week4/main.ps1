@@ -1,6 +1,1 @@
-﻿. (Join-Path $PSScriptRoot apachelogs.ps1)
-
-$tableRecords = ApacheLogs1
-$tableRecords | Format-Table -AutoSize -Wrap
-
-getPageCodes "index.html" " 404 " "Chrome"
+﻿. (Join-Path "C:\Users\champuser\CSI-230-02/week4" apachelogs.ps1)

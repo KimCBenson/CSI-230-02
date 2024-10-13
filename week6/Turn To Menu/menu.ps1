@@ -1,0 +1,42 @@
+﻿. (Join-Path "C:\Users\champuser\CSI-230-02\week4" "apachelogs.ps1")
+. (Join-Path "C:\Users\champuser\CSI-230-02\week2\process_management" "chromecheck.ps1")
+
+
+$operation = $true
+
+$prompt = "`n"
+$prompt += "Please choose your operation:`n"
+$prompt += "1 - Display Last 10 Apache Logs`n"
+$prompt += "2 - Display Last 10 Failed Logins`n"
+$prompt += "3 - Display at Risk Users`n"
+$prompt += "4 - Start Chrome`n"
+$prompt += "5 - Exit"
+
+while ($operation)
+{
+    $prompt
+    $choice = Read-Host
+
+    if ($choice -eq 1)
+    {
+        $apacheLogs = ApacheLogs1 | Select-Object -Last 10
+
+        $apacheLogs
+    }
+
+    elseif ($choice -eq 4)
+    {
+        openChrome
+    }
+
+    elseif ($choice -eq 5)
+    {
+        Write-Host "Exiting program!" | Out-String
+        $operation = $false
+    }
+
+    else
+    {
+        Write-Host "Please enter a valid option (digit between 1 and 5)!" | Out-String
+    }
+}

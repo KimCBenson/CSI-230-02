@@ -100,9 +100,16 @@ do
         # Display frequent visitors
 	elif [[ "$userInput" == "5" ]]; then
 		echo "Displaying frequent visitors:"
+		frequentVisitors
 		
 	# Display suspicious visitors
+	elif [[ "$userInput" == "6" ]]; then
+		echo "Displaying suspicious visistors:"
+		suspiciousVisitors
+
 	# Display a message, if an invalid input is given
+	else
+		echo "Invalid input!"
 	fi
 done
 

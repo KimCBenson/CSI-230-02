@@ -1,0 +1,7 @@
+Subject: Failed Logins
+Dec  uid=1000 tty=/dev/pts/0 ruser=champuser
+Dec  uid=1000 tty=/dev/pts/0 ruser=champuser
+Dec  uid=1000 tty=/dev/pts/0 ruser=champuser
+Dec  uid=1000 tty=/dev/pts/1 ruser=champuser
+Dec 10 euid=0 ruser=champuser rhost=
+Dec 10 euid=0 ruser=champuser rhost=
